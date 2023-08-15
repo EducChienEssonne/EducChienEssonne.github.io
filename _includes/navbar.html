@@ -15,19 +15,18 @@
           <a class="nav-link" href="{{"/about" | relative_url }}">Qui suis-je?</a>
         </li>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{"/prestations" | relative_url }}">Prestations</a>
-      </li>
+          <div class="dropdown">
+            <button class="dropbtn">Prestations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/1errendezvous">1er rendez-vous</a>
+              <a href="/bilancomportemental">Bilan comportemental</a>
+              <a href="/coursindividuel">Cours individuel</a>
+            </div>
+          </div>
 
-          <li class="nav-item">
-            <a class="nav-link" href="{{"/prestations/1errendezvous" | relative_url }}">1er rendez-vous hors bilan comportemental</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{"/prestations/bilancomportemental" | relative_url }}">Bilan comportemental</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{"/prestations/Coursindividuel" | relative_url }}">Cours individuel</a>
-          </li>
+
 
         <li class="nav-item">
           <a class="nav-link" href="{{"/tarifs" | relative_url }}">Tarifs</a>
