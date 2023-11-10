@@ -15,17 +15,30 @@
           <a class="nav-link" href="{{"/about" | relative_url }}">Qui suis-je?</a>
         </li>
       </li>
-          <div class="dropdown">
-            <button class="dropbtn">Prestations
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="/1errendezvous">1er rendez-vous</a>
-              <a href="/bilancomportemental">Bilan comportemental</a>
-              <a href="/coursindividuel">Cours individuel</a>
-              <a href="/conseilachat">Conseils pour l'achat/l'adoption</a>
-            </div>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Prestations
+                </a>
+                <!-- Here's the magic. Add the .animate and .slideIn classes to your .dropdown-menu and you're all set! -->
+                <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/1errendezvous">1er rendez-vous</a>
+                  <a class="dropdown-item" href="/bilancomportemental">Bilan comportemental</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/coursindividuel">Cours individuel</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/conseilachat">Conseils pour l'achat/l'adoption</a>
+                </div>
+              </li>
+            </ul>
           </div>
+        </div>
+
+
+
 
 
 
